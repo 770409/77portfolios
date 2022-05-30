@@ -14,7 +14,20 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <!-- AOS -->
+    <!-- lightBox -->
+    <link rel="stylesheet" href="./css/lightbox.css">
 </head>
+<style>
+    .smallImg {
+        width: 200px;
+        height: 200px;
+        background-image: url(./picture/p3/3-1.jpg);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+    }
+</style>
 
 
 <body>
@@ -69,7 +82,7 @@
                 <!-- 上 -->
                 <div class="row mb-4">
                     <h1 class="font20 text-center w-100">000</h1>
-                    <h1 class="font20 text-center w-100">3333</h1>
+                    <h2 class="font20 text-center w-100">3333</h2>
                 </div>
                 <!-- 下 -->
                 <div class="row w-100">
@@ -78,7 +91,9 @@
                         <div class="pos po2 position-relative">
                             <img class="w-100" src="./picture/p2/2_bootstrap.png" alt="">
 
-                            <a class="position-absolute" href=""><span class="border">more</span></a>
+                            <a class="position-absolute"
+                                href="https://770409.github.io/Bootstrap_exercise/Bootstrap_index.html"><span
+                                    class="border">more</span></a>
 
 
                         </div>
@@ -87,18 +102,28 @@
                         <div class="pos po1 mb-4 position-relative">
                             <img class="w-100
                             " src="./picture/p2/1_Microsoft.png" alt="">
-                            <a class="position-absolute" href=""><span class="border">more</span></a></div>
+                            <a class="position-absolute" href="https://770409.github.io/Microsoft/"><span
+                                    class="border">more</span></a>
+                        </div>
                         <div class="pos po3 mb-4 position-relative"><img class="w-100
                             " src="./picture/p2/3_coffee.png" alt="">
-                            <a class="position-absolute" href=""><span class="border">more</span></a></div>
+                            <a class="position-absolute" href="https://770409.github.io/hopecoffee/"><span
+                                    class="border">more</span></a>
+                        </div>
                         <div class="pos po5 position-relative"><img class="w-100
                             " src="./picture/p2/5_play.png" alt="">
-                            <a class="position-absolute" href=""><span class="border">more</span></a></div>
+                            <a class="position-absolute"
+                                href="https://770409.github.io/get-color/go_color_play.html"><span
+                                    class="border">more</span></a>
+                        </div>
                     </div>
                     <div class="col-12 col-lg-4 d-flex align-items-center">
                         <div class="pos po4"><img class="w-100
                             " src="./picture/p2/4_weather_api.png" alt="">
-                            <a class="position-absolute" href=""><span class="border">more</span></a></div>
+                            <a class="position-absolute"
+                                href="https://770409.github.io/How-is-the-weather-today/weather.html"><span
+                                    class="border">more</span></a>
+                        </div>
                     </div>
                 </div>
 
@@ -106,19 +131,33 @@
         </section>
 
         <!-- p.3 -->
-        <section id="llustrator" class="vh">
-            <div class="container">
-                <div class="row">
+        <section id="llustrator" class="vh bg-primary">
+            <div class="container h-100 d-flex justify-content-center align-items-center">
+                <div class="row h-100 ">
                     <!-- 左 -->
-                    <div class="col-6">
-                        <img src="" alt="">
-                        <img src="" alt="">
+                    <div class="lluL col-6 d-flex flex-column align-items-end justify-content-center">
 
+                        <div class="imgBg d-flex justify-content-center align-items-center">
+
+                            <a href="./picture/p3/3-1.jpg" data-lightbox="image-1" data-title="20220506">
+                                <div class="smallImg mb-4"></div>
+                            </a>
+                            <!-- <img class="" src="./picture/p3/3-1.jpg" alt=""> -->
+                        </div>
+
+                        <!-- <div class="imgBg d-flex justify-content-center align-items-center">
+                            <img src="./picture/p3/3-2.jpg" alt="">
+                        </div> -->
                     </div>
                     <!-- 右 -->
-                    <div class="col-6">
-                        <h1></h1>
-                        <img src="" alt="">
+                    <div class="lluR col-6 d-flex flex-column justify-content-center">
+                        <h1 class="mb-4">llustrator
+                            <br>
+                            Lowpoly
+                        </h1>
+                        <!-- <div class="imgBg d-flex justify-content-center align-items-center">
+                            <img src="./picture/p3/3-3.jpg" alt="">
+                        </div> -->
                     </div>
                 </div>
 
@@ -145,7 +184,8 @@
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
         integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script><!-- light -->
+    <script src="./js/lightbox-plus-jquery.js"></script>
 </body>
 
 </html>

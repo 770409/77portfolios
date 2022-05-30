@@ -120,7 +120,7 @@ nav {
   }
 
   90% {
-    top: 40%;
+    top: 45%;
   }
 
   100% {
@@ -161,6 +161,14 @@ main {
 
   #portfolios {
     .container {
+      h1 {
+        color: rgb(255, 255, 255);
+      }
+
+      h2 {
+        color: rgb(255, 255, 255);
+      }
+
       .po2 {
         transform: translateY(-50%);
       }
@@ -173,17 +181,15 @@ main {
         overflow: hidden;
 
         img {
-
-          transition: .5s;
-          
           opacity: 1;
 
           &:hover {
             opacity: .7;
-            
+            cursor: pointer;
+
 
             ~a {
-              animation: dio 1s cubic-bezier(0.54, 0.35, 1, 1) 0s 1 alternate forwards;
+              animation: dio .4s cubic-bezier(0.54, 0.35, 1, 1) 0s 1 alternate forwards;
             }
 
           }
@@ -196,19 +202,20 @@ main {
           transform: translate(-50%, -50%);
 
           &:hover {
-            animation: dio 1s cubic-bezier(0.54, 0.35, 1, 1) 0s 1 alternate forwards;
+            animation: dio .3s cubic-bezier(0.54, 0.35, 1, 1) 0s 1 alternate forwards;
           }
 
           span {
             color: rgb(255, 255, 255);
             // transition: .2s;
-
             padding: 8px 16px;
-            box-shadow: ;
-            &:hover{
+            box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+
+            &:hover {
               background-color: rgb(223, 186, 148);
             }
-            &:active{
+
+            &:active {
               padding: 10px 18px;
               background-color: rgb(189, 154, 119);
             }
@@ -218,6 +225,43 @@ main {
 
 
 
+
+      }
+    }
+  }
+
+  #llustrator {
+    .container {
+      .row {
+        .lluL {
+          .imgBg {
+            img {
+              width: 200px;
+            }
+          }
+        }
+
+        .lluR {
+          h1 {
+            color: rgb(255, 255, 255);
+          }
+
+          // .imgBg {
+
+          //   // width: 220px;
+          //   // height: 312px;
+          //   // background-color: rgb(0, 0, 0);
+          //   .smallImg {
+          //     width: 200px;
+          //     height: 200px;
+          //     background-image: url(../picture/p3/3-1.jpg);
+          //     background-position: center;
+          //     background-size: contain;
+          //     background-repeat: no-repeat;
+
+          //   }
+          // }
+        }
 
       }
     }

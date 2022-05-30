@@ -8,9 +8,35 @@ body {
   scroll-behavior: smooth;
 }
 
+a:hover {
+  text-decoration: none !important;
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+li {
+  color: #000;
+}
+
+.letter2 {
+  letter-spacing: 2px;
+}
+
+.vh {
+  height: calc(100vh - 51px);
+}
+
 .container {
   width: 100%;
   padding: 96px 20px;
+}
+
+.row {
+  margin-left: 0px !important;
 }
 
 p {
@@ -47,8 +73,111 @@ p {
   font-size: 30px;
 }
 
+nav .row {
+  position: fixed;
+  height: 100vh;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+nav .row .btnn li {
+  color: rgb(255, 255, 255);
+}
+nav .row .soshow {
+  margin-bottom: 81px;
+}
+nav .row .soshow a {
+  margin: 10px 0;
+}
+nav .row .soshow i {
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+}
+nav .row .soshow .mail {
+  margin-bottom: 8px;
+}
+
+@-webkit-keyframes dio {
+  0% {
+    top: 115%;
+  }
+  90% {
+    top: 40%;
+  }
+  100% {
+    top: 50%;
+  }
+}
+
+@keyframes dio {
+  0% {
+    top: 115%;
+  }
+  90% {
+    top: 40%;
+  }
+  100% {
+    top: 50%;
+  }
+}
+main #my {
+  background-color: #3C564F;
+}
+main #my .container .picture1 .rounded-circle {
+  background: rgb(182, 145, 109);
+  color: #3C564F;
+  width: 200px;
+  height: 200px;
+  transform: translate(-30%, -30%);
+  transition: 0.8s;
+}
+main #my .container .picture1 .rounded-circle:hover {
+  width: 300px;
+  height: 300px;
+  background-color: #BCB8AD;
+}
+main #portfolios .container .po2 {
+  transform: translateY(-50%);
+}
+main #portfolios .container .po4 {
+  transform: translateY(50%);
+}
+main #portfolios .container .pos {
+  overflow: hidden;
+}
+main #portfolios .container .pos img {
+  transition: 0.5s;
+  opacity: 1;
+}
+main #portfolios .container .pos img:hover {
+  opacity: 0.7;
+}
+main #portfolios .container .pos img:hover ~ a {
+  -webkit-animation: dio 1s cubic-bezier(0.54, 0.35, 1, 1) 0s 1 alternate forwards;
+          animation: dio 1s cubic-bezier(0.54, 0.35, 1, 1) 0s 1 alternate forwards;
+}
+main #portfolios .container .pos a {
+  top: 115%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+main #portfolios .container .pos a:hover {
+  -webkit-animation: dio 1s cubic-bezier(0.54, 0.35, 1, 1) 0s 1 alternate forwards;
+          animation: dio 1s cubic-bezier(0.54, 0.35, 1, 1) 0s 1 alternate forwards;
+}
+main #portfolios .container .pos a span {
+  color: rgb(255, 255, 255);
+  padding: 8px 16px;
+}
+box main #portfolios .container .pos a span:hover {
+  background-color: rgb(223, 186, 148);
+}
+main #portfolios .container .pos a span:active {
+  padding: 10px 18px;
+  background-color: rgb(189, 154, 119);
+}
+
 footer .Copyright {
   color: #7B7673;
   letter-spacing: 5px;
-  padding: 0 20px 20px 0;
+  padding: 10px;
 }/*# sourceMappingURL=77.css.map */

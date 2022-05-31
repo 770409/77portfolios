@@ -21,7 +21,7 @@ a:hover {
 }
 
 .vh {
-  height: calc(100vh - 41px);
+  height: calc(100vh - 65px);
 }
 
 .container {
@@ -129,6 +129,12 @@ main .pDisnone {
 main .my {
   background-color: #3C564F;
 }
+main .my .container .picture1 {
+  background-image: url(../picture/p1/3F71CAEB-3953-4FD2-9F47-DF0DF11C54B6.jpg);
+  background-position: 0% 15%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 main .my .container .picture1 .rounded-circle {
   background: rgb(182, 145, 109);
   color: #3C564F;
@@ -137,18 +143,29 @@ main .my .container .picture1 .rounded-circle {
   transform: translate(-30%, -30%);
   transition: 0.8s;
 }
+main .my .container .picture1 .rounded-circle h1 {
+  padding: 90px 10px 0 50px;
+  font-size: 16px;
+  transition: 0.5s;
+}
 main .my .container .picture1 .rounded-circle:hover {
   width: 300px;
   height: 300px;
   background-color: #BCB8AD;
 }
+main .my .container .picture1 .rounded-circle:hover h1 {
+  padding: 130px 0 0 0px;
+  font-size: 24px;
+}
 main .portfolios {
   background-color: rgb(222, 208, 199);
 }
 main .portfolios .container h1 {
+  font-size: 28px;
   color: rgb(255, 255, 255);
 }
 main .portfolios .container h2 {
+  font-size: 20px;
   color: rgb(255, 255, 255);
 }
 main .portfolios .container .po2 {
@@ -177,7 +194,7 @@ main .portfolios .container .pos .img-container__1:before, main .portfolios .con
   left: 10px;
   z-index: 1;
   transition: 0.5s;
-  color: rgb(239, 226, 233);
+  color: rgb(222, 208, 199);
 }
 main .portfolios .container .pos .img-container__1:after, main .portfolios .container .pos .img-container__1 .img:after {
   content: attr(data-des);
@@ -194,7 +211,6 @@ main .portfolios .container .pos .img-container__1:after, main .portfolios .cont
 main .portfolios .container .pos .img-container__1 .img {
   width: 100%;
   height: 100%;
-  filter: blur(1px);
   transition: 0.3s;
   position: relative;
 }
@@ -205,9 +221,9 @@ main .portfolios .container .pos .img-container__1 .img:before {
   left: 0;
   width: 100%;
   height: 100%;
-  transition: 0.5s;
+  transition: 0.3s;
   text-shadow: 1px 1px 20px black;
-  background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.4) 40%);
+  background: rgba(0, 0, 0, 0.4);
   opacity: 0.6;
 }
 main .portfolios .container .pos .img-container__1 .img img {
@@ -266,6 +282,9 @@ main .llustrator .container .row .lluR .imgBg img {
 }
 main .llustrator2 {
   background-color: rgb(198, 168, 178);
+}
+main .llustrator2 h1 {
+  color: rgb(255, 255, 255);
 }
 main .llustrator2 .imgBg img {
   height: 258px;

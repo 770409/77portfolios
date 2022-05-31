@@ -26,7 +26,7 @@ a {
 }
 
 .vh {
-  height: calc(100vh - 41px);
+  height: calc(100vh - 65px);
 }
 
 .container {
@@ -144,20 +144,35 @@ main {
     .container {
 
       .picture1 {
+        background-image: url(../picture/p1/3F71CAEB-3953-4FD2-9F47-DF0DF11C54B6.jpg);
+        background-position:0% 15% ;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
 
         .rounded-circle {
           background: rgb(182, 145, 109);
           color: #3C564F;
           width: 200px;
           height: 200px;
+          
           // line-height: 100px;
           transform: translate(-30%, -30%);
           transition: .8s;
+          h1{
+            padding: 90px 10px 0 50px;
+            font-size: 16px;
+            transition: .5s;
+          }
 
           &:hover {
             width: 300px;
             height: 300px;
             background-color: #BCB8AD;
+            h1{
+              padding: 130px 0 0 0px;
+              font-size: 24px;
+            }
 
 
           }
@@ -171,10 +186,12 @@ main {
     background-color: rgb(222,208,199);
     .container {
       h1 {
+        font-size: 28px;
         color: rgb(255, 255, 255);
       }
 
       h2 {
+        font-size: 20px;
         color: rgb(255, 255, 255);
       }
 
@@ -214,7 +231,7 @@ main {
             left: 10px;
             z-index: 1;
             transition: .5s;
-            color: rgb(239,226,233);
+            color: rgb(222,208,199);
           }
 
           &:after {
@@ -239,7 +256,7 @@ main {
             //這是SCSS的用法，意思是我要.img-container__1裡面的設定
             width: 100%;
             height: 100%;
-            filter: blur(1px);
+            // filter: blur(1px);
             //先模糊，這邊因為外面還有包一層，才不會連邊界都糊糊的
             transition: .3s;
             position: relative;
@@ -253,15 +270,17 @@ main {
               left: 0;
               width: 100%;
               height: 100%;
-              transition: .5s;
+              transition: .3s;
               text-shadow: 1px 1px 20px black;
-              background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.4) 40%);
+              // background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.4) 40%);
+              background:rgba(0, 0, 0, 0.4);
               //就是一個漸層：透明->黑色
               opacity: .6;
             }
 
             img {
               width: 100%;
+             
             }
 
 
@@ -361,6 +380,9 @@ main {
   }
   .llustrator2{
     background-color: rgb(198,168,178);
+    h1{
+      color: rgb(255, 255, 255);
+    }
     .imgBg {
       img {
         height: 258px;

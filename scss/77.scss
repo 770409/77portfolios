@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
- 
+
 }
 
 body {
@@ -21,7 +21,8 @@ a {
 .letter2 {
   letter-spacing: 2px;
 }
-.colorli{
+
+.colorli {
   color: rgb(255, 255, 255);
 }
 
@@ -71,14 +72,18 @@ p {
 .font30 {
   font-size: 30px;
 }
-.crp{
+
+.crp {
   cursor: pointer;
-  &:hover{
+
+  &:hover {
     color: rgb(185, 185, 185);
   }
 }
+
 // nav
 nav {
+
   z-index: 5;
 
   .row {
@@ -86,11 +91,11 @@ nav {
     height: 100vh;
     margin-right: 0px;
     margin-left: 0px;
-    
 
-    .btnn {
-     
+    label {
+      display: none;
     }
+
 
     .soshow {
       margin-bottom: 81px;
@@ -102,7 +107,8 @@ nav {
       i {
         font-size: 30px;
         color: rgb(255, 255, 255);
-        &:hover{
+
+        &:hover {
           color: rgb(185, 185, 185);
         }
 
@@ -134,7 +140,7 @@ nav {
 }
 
 main {
-  .pDisnone{
+  .pDisnone {
     display: none;
   }
 
@@ -145,21 +151,22 @@ main {
 
       .picture1 {
         background-image: url(../picture/p1/3F71CAEB-3953-4FD2-9F47-DF0DF11C54B6.jpg);
-        background-position:0% 20% ;
+        background-position: 0% 20%;
         background-repeat: no-repeat;
         background-size: cover;
-        
+
 
         .rounded-circle {
           background: rgb(182, 145, 109);
           color: #3C564F;
           width: 200px;
           height: 200px;
-          
+
           // line-height: 100px;
           transform: translate(-30%, -30%);
           transition: .8s;
-          h1{
+
+          h1 {
             padding: 90px 10px 0 50px;
             font-size: 16px;
             transition: .5s;
@@ -169,7 +176,8 @@ main {
             width: 300px;
             height: 300px;
             background-color: #BCB8AD;
-            h1{
+
+            h1 {
               padding: 130px 0 0 0px;
               font-size: 24px;
             }
@@ -183,7 +191,8 @@ main {
   }
 
   .portfolios {
-    background-color: rgb(222,208,199);
+    background-color: rgb(222, 208, 199);
+
     .container {
       h1 {
         font-size: 28px;
@@ -197,7 +206,7 @@ main {
 
       .po2 {
         transform: translateY(-50%);
-        
+
       }
 
       .po4 {
@@ -222,7 +231,7 @@ main {
           &:before {
             content: attr(data-title);
             //讀取元素裡面的文字
-            
+
             //背景有時候太亮，文字看不到，我下點陰影，
             //但在第三個數值裡面設定讓他發散一點，陰影才不會太重
             font-size: 18px;
@@ -231,7 +240,7 @@ main {
             left: 10px;
             z-index: 1;
             transition: .5s;
-            color: rgb(222,208,199);
+            color: rgb(222, 208, 199);
           }
 
           &:after {
@@ -248,14 +257,14 @@ main {
             //先讓文字消失
             z-index: 1;
             transition: .5s;
-           
+
           }
 
           .img {
             @extend .img-container__1;
             //這是SCSS的用法，意思是我要.img-container__1裡面的設定
             width: 100%;
-            height: 100%;
+            // height: 100%;
             // filter: blur(1px);
             //先模糊，這邊因為外面還有包一層，才不會連邊界都糊糊的
             transition: .3s;
@@ -273,14 +282,14 @@ main {
               transition: .3s;
               text-shadow: 1px 1px 20px black;
               // background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.4) 40%);
-              background:rgba(0, 0, 0, 0.4);
+              background: rgba(0, 0, 0, 0.4);
               //就是一個漸層：透明->黑色
               opacity: .6;
             }
 
             img {
               width: 100%;
-             
+
             }
 
 
@@ -302,12 +311,12 @@ main {
 
             .img {
               width: 100%;
-              
+
               overflow: hidden;
               filter: blur(0); //讓圖片不模糊
 
               img {
-                transform: translate(-2.5%,-2.5%);
+                transform: translate(-2.5%, -2.5%);
                 width: 105%; //讓圖片有點放大效果
               }
 
@@ -321,7 +330,7 @@ main {
 
 
         a {
-          top: 115%;
+          top: 135%;
           left: 50%;
           transform: translate(-50%, -50%);
           color: rgb(255, 255, 255);
@@ -351,14 +360,9 @@ main {
   }
 
   .llustrator {
-    background-color: rgb(74,74,74);
+    background-color: rgb(74, 74, 74);
+
     .container {
-      .p3p{
-        position: absolute;
-        top: 15%;
-        right: 35%;
-        width: 200px;
-      }
       .row {
         .lluL {
           .imgBg {
@@ -369,34 +373,56 @@ main {
         }
 
         .lluR {
+          .p3p {
+            position: absolute;
+            top: 5%;
+            right: -25%;
+            width: 200px;
+          }
+
           h1 {
             color: rgb(255, 255, 255);
           }
+
           .imgBg {
             img {
               height: 258px;
             }
           }
 
-          
+
         }
 
       }
     }
   }
-  .llustrator2{
-    background-color: rgb(198,168,178);
-    h1{
-      color: rgb(255, 255, 255);
-    }
-    .imgBg {
-      img {
-        height: 258px;
+
+  .llustrator2 {
+    background-color: rgb(198, 168, 178);
+
+    .container {
+      h1 {
+        color: rgb(255, 255, 255);
       }
+
+      .row {
+
+        .imgBg {
+          flex-wrap: wrap;
+
+          img {
+            height: 258px;
+          }
+        }
+      }
+
+
     }
 
+
+
   }
-  
+
 
 }
 
@@ -405,6 +431,270 @@ footer {
   .Copyright {
     color: #7B7673;
     letter-spacing: 5px;
-    padding: 10px;
+    padding:20px 10px 0px;
   }
+}
+
+// =====================
+@media(max-width: 1200px) {
+  main {
+    .portfolios {
+      .container {
+        .pos {
+          .img-container__1 {
+            .img {
+              img {
+                transform: translate(-7.8%, 0%);
+                width: 120%;
+              }
+            }
+
+            &:hover {
+
+
+              .img {
+                img {
+                  transform: translate(-11.5%, -5%);
+                  width: 130%; //讓圖片有點放大效果
+                }
+              }
+            }
+          }
+
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 992px) {
+  main {
+    .portfolios {
+      .container {
+        .porow {
+          margin-bottom: 8px !important;
+
+          h1 {
+            font-size: 24px;
+            margin-bottom: 8px !important;
+          }
+
+          h2 {
+            font-size: 16px;
+            margin-bottom: 0px;
+          }
+        }
+
+        .po2 {
+          transform: translate(0%);
+          margin-bottom: 24px;
+        }
+
+        .po4 {
+          transform: translate(0%);
+          margin-top: 24px;
+        }
+
+        .pos {
+          height: 100px;
+          .img-container__1{
+            &:before{
+              bottom: 290px;
+            }
+            &:hover{
+              &:before{
+                bottom: 350px;
+                z-index: 2;
+              }
+              &:after{
+                transform: translate(0, -315px);
+              }
+
+            }
+  
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 768px) {
+  main {
+
+    .portfolios {
+      .container {
+        .pos {
+          height: 100px;
+          .img-container__1{
+            &:before{
+              bottom: 185px;
+            }
+            &:hover{
+              &:before{
+                bottom: 230px;
+              }
+              &:after{
+                transform: translate(0, -200px);
+              }
+
+            }
+  
+          }
+        }
+      }
+    }
+
+
+
+    .llustrator2 {
+      .container {
+        .row {
+          .imgBg {
+            img {
+              width: 150px;
+              height: 200px;
+            }
+          }
+        }
+
+
+      }
+
+
+
+    }
+  }
+}
+
+@media(max-width: 580px) {
+  nav {
+    .row {
+      z-index: 5;
+
+      label {
+        display: block;
+      }
+
+
+      .btnn {
+
+        margin-top: -255px;
+
+        width: 100%;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(165, 161, 159, .9);
+        border-radius: 15px;
+        display: none;
+
+        .crp {
+          border-bottom: 1px dashed #ffffff;
+
+        }
+
+
+
+      }
+    }
+
+  }
+
+  main {
+    .my {
+      .container {
+        .picture1 {
+          background-position: center;
+
+          .rounded-circle {
+            width: 150px;
+            height: 150px;
+
+            h1 {
+              font-size: 13px;
+              padding: 65px 10px 0 30px;
+            }
+
+            &:hover {
+              width: 180px;
+              height: 180px;
+
+              h1 {
+                padding: 90px 0 0 0px;
+                font-size: 16px;
+              }
+
+
+            }
+          }
+        }
+      }
+    }
+    .portfolios {
+      .container {
+        .pos {
+          height: 100px;
+          .img-container__1{
+            &:before{
+              opacity: 0;
+            }
+            &:after{
+              opacity: 0;
+            }
+
+            }
+          }
+        }
+      }
+    .llustrator {
+      .container {
+        .row {
+          .lluL {
+            .imgBg {
+              img {
+                width: 150px;
+                height: 200px;
+              }
+            }
+          }
+
+          .lluR {
+            .p3p {
+              width: 150px;
+              top: 14%;
+              right: -10%;
+            }
+
+            h1 {
+              font-size: 24px;
+            }
+
+            .imgBg {
+              img {
+                width: 150px;
+                height: 200px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .llustrator2 {
+      .container {
+        h1 {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+  footer {
+    .Copyright {
+      font-size: 12px;   
+      letter-spacing: 1px;
+      
+    }
+  }
+
 }

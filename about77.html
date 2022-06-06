@@ -9,6 +9,7 @@
     <link rel="shortcut icon" href="./picture/eileen.png">
     <!-- 77 -->
     <link rel="stylesheet" href="./css/77.css">
+    <link rel="stylesheet" href="./css/menu.css">
     <!-- icon -->
     <link rel="stylesheet" href="./css/all.css">
     <!-- bootstrap -->
@@ -35,9 +36,20 @@
 <body>
     <!-- nav -->
     <nav>
+
         <div class="row">
             <!-- 上 -->
-            <div class="btnn col-10 mx-auto p-3">
+            <label for="AA">
+                <div class="hanbergar" tabindex="1">
+                    <div class="line line1"></div>
+                    <div class="line line2"></div>
+                    <div class="line line3"></div>
+                </div>
+
+            </label>
+
+            <input type="checkbox" id="AA">
+            <div class="btnn col-10 mx-auto p-3" tabindex="1">
 
 
                 <div class="navBtn1 crp my-2 letter2 colorli  ">莊雅淇</div>
@@ -53,12 +65,13 @@
 
             </div>
             <!-- 下 -->
-            <!-- 調屁股 -->
             <div class="soshow col-10 ml-3 position-relative ">
                 <div class="position-absolute d-flex flex-column fixed-bottom">
                     <a class="px-3" href="https://line.me/ti/p/EQFXFZbCpJ"><i class="fa-brands fa-line"></i></a>
-                    <a class="px-3" href="https://www.instagram.com/accounts/login/?next=/eileen_01222/"><i class="fa-brands fa-instagram"></i></a>
-                    <a class="px-3 fb" href="https://www.facebook.com/profile.php?id=100000342532345"><i class="fa-brands fa-facebook-messenger"></i></a>
+                    <a class="px-3" href="https://www.instagram.com/accounts/login/?next=/eileen_01222/"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a class="px-3 fb" href="https://www.facebook.com/profile.php?id=100000342532345"><i
+                            class="fa-brands fa-facebook-messenger"></i></a>
                 </div>
 
             </div>
@@ -75,8 +88,9 @@
                         <h1 class="animate__animated animate__bounce
                         animate__animated animate__infinite
                         ">前端工程師
-                    <br>
-                    &emsp;&emsp;&emsp;網頁設計師</h1>
+                            <br>
+                            &emsp;&emsp;&emsp;網頁設計師
+                        </h1>
                     </div>
                     <img src="" alt="">
                 </div>
@@ -89,7 +103,7 @@
         <section id="portfolios" class="ppp vh portfolios">
             <div class="container">
                 <!-- 上 -->
-                <div class="row mb-4">
+                <div class="porow row mb-4">
                     <h1 class="font20 text-center w-100 mb-3 animate__animated animate__bounce">前端框架應用</h1>
                     <h2 class="font20 text-center w-100 animate__animated animate__bounce">作品呈現</h2>
                 </div>
@@ -150,7 +164,7 @@
         <!-- p.3 -->
         <section id="llustrator" class="ppp vh llustrator">
             <div class="container h-100 d-flex justify-content-center align-items-center">
-                <img class="p3p" src="./picture/p3/p3p.png" alt="">
+               
                 <div class="row h-100 ">
                     <!-- 左 -->
                     <div class="lluL col-6 d-flex flex-column align-items-end justify-content-center">
@@ -172,13 +186,14 @@
                     </div>
                     <!-- 右 -->
                     <div class="lluR col-6 d-flex flex-column justify-content-center">
-                        <div>
+                        <div >
+                            <img class="p3p" src="./picture/p3/p3p.png" alt="">
                             <h1 class="mb-4 animate__animated animate__bounce">llustrator
-                            <br>
-                            Lowpoly
-                        </h1>
+                                <br>
+                                Lowpoly
+                            </h1>
                         </div>
-                        
+
 
                         <div class="imgBg d-flex justify-content-center align-items-center">
                             <a href="./picture/p3/3-3.jpg" data-lightbox="img-set-1" data-title="lowpoly">
@@ -193,21 +208,23 @@
         <!-- p.4 -->
         <section id="llustrator2" class="ppp vh llustrator2">
             <div class="container h-100 d-flex flex-column justify-content-center align-items-center">
-                <h1 class="text-center animate__animated animate__bounce ">Icon</h1>
+                <h1 class="text-center animate__animated animate__bounce ">llustrator
+                    <br>Icon
+                </h1>
                 <div class="row h-100">
                     <div class="imgBg d-flex justify-content-center align-items-center">
 
 
                         <a href="./picture/p4/4-2.jpg" data-lightbox="img-set-1" data-title="icon">
-                            <img class="small-img m-4" src="./picture/p4/4-2.jpg" alt="">
+                            <img class="small-img m-2 m-lg-4 " src="./picture/p4/4-2.jpg" alt="">
                         </a>
 
                         <a href="./picture/p4/4-3.jpg" data-lightbox="img-set-1" data-title="icon">
-                            <img class="small-img m-4" src="./picture/p4/4-3.jpg" alt="">
+                            <img class="small-img m-2 m-lg-4 " src="./picture/p4/4-3.jpg" alt="">
                         </a>
 
                         <a href="./picture/p4/4-4.jpg" data-lightbox="img-set-1" data-title="icon">
-                            <img class="small-img m-4" src="./picture/p4/4-4.jpg" alt="">
+                            <img class="small-img m-2 m-lg-4 " src="./picture/p4/4-4.jpg" alt="">
                         </a>
 
 
@@ -233,7 +250,6 @@
 
 
 
-
     <!-- bootstrap -->
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
@@ -247,6 +263,7 @@
         crossorigin="anonymous"></script>.
     <!-- light -->
     <script src="./js/lightbox-plus-jquery.js"></script>
+
 </body>
 
 </html>

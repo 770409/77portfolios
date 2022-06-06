@@ -74,10 +74,9 @@ p {
 }
 
 .crp {
-  cursor: pointer;
-
   &:hover {
     color: rgb(185, 185, 185);
+    
   }
 }
 
@@ -102,6 +101,7 @@ nav {
 
       a {
         margin: 10px 0;
+        cursor: none;
       }
 
       i {
@@ -220,6 +220,8 @@ main {
 
         .img-container__1 {
           position: relative;
+          cursor: pointer;
+
 
           &:hover {
             ~a {
@@ -342,6 +344,7 @@ main {
 
           &:hover {
             animation: dio .3s cubic-bezier(0.54, 0.35, 1, 1) 0s 1 alternate forwards;
+
           }
 
           &:active {
@@ -431,7 +434,7 @@ footer {
   .Copyright {
     color: #7B7673;
     letter-spacing: 5px;
-    padding:20px 10px 0px;
+    padding: 20px 10px 0px;
   }
 }
 
@@ -497,21 +500,24 @@ footer {
 
         .pos {
           height: 100px;
-          .img-container__1{
-            &:before{
+
+          .img-container__1 {
+            &:before {
               bottom: 290px;
             }
-            &:hover{
-              &:before{
+
+            &:hover {
+              &:before {
                 bottom: 350px;
                 z-index: 2;
               }
-              &:after{
+
+              &:after {
                 transform: translate(0, -315px);
               }
 
             }
-  
+
           }
         }
       }
@@ -526,20 +532,23 @@ footer {
       .container {
         .pos {
           height: 100px;
-          .img-container__1{
-            &:before{
+
+          .img-container__1 {
+            &:before {
               bottom: 185px;
             }
-            &:hover{
-              &:before{
+
+            &:hover {
+              &:before {
                 bottom: 230px;
               }
-              &:after{
+
+              &:after {
                 transform: translate(0, -200px);
               }
 
             }
-  
+
           }
         }
       }
@@ -631,22 +640,31 @@ footer {
         }
       }
     }
+
     .portfolios {
       .container {
         .pos {
           height: 100px;
-          .img-container__1{
-            &:before{
-              opacity: 0;
-            }
-            &:after{
+
+          .img-container__1 {
+            &:before {
               opacity: 0;
             }
 
+            &:hover {
+              
+
+              &:after {
+               opacity: 0;
+              }
+
             }
+
           }
         }
       }
+    }
+
     .llustrator {
       .container {
         .row {
@@ -689,11 +707,12 @@ footer {
       }
     }
   }
+
   footer {
     .Copyright {
-      font-size: 12px;   
+      font-size: 12px;
       letter-spacing: 1px;
-      
+
     }
   }
 

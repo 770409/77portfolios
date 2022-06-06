@@ -67,9 +67,6 @@ p {
   font-size: 30px;
 }
 
-.crp {
-  cursor: pointer;
-}
 .crp:hover {
   color: rgb(185, 185, 185);
 }
@@ -91,6 +88,7 @@ nav .row .soshow {
 }
 nav .row .soshow a {
   margin: 10px 0;
+  cursor: none;
 }
 nav .row .soshow i {
   font-size: 30px;
@@ -184,6 +182,7 @@ main .portfolios .container .pos {
 }
 main .portfolios .container .pos .img-container__1, main .portfolios .container .pos .img-container__1 .img {
   position: relative;
+  cursor: pointer;
 }
 main .portfolios .container .pos .img-container__1:hover ~ a, main .portfolios .container .pos .img-container__1 .img:hover ~ a {
   -webkit-animation: dio 0.4s cubic-bezier(0.54, 0.35, 1, 1) 0s 1 alternate forwards;
@@ -415,7 +414,7 @@ footer .Copyright {
   main .portfolios .container .pos .img-container__1:before, main .portfolios .container .pos .img-container__1 .img:before {
     opacity: 0;
   }
-  main .portfolios .container .pos .img-container__1:after, main .portfolios .container .pos .img-container__1 .img:after {
+  main .portfolios .container .pos .img-container__1:hover:after, main .portfolios .container .pos .img-container__1 .img:hover:after {
     opacity: 0;
   }
   main .llustrator .container .row .lluL .imgBg img {

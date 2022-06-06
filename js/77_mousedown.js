@@ -17,7 +17,7 @@ window.onload = function () {
 }
 
 document.addEventListener('mousemove', c => {
-    icon.setAttribute("style", "top:" + (c.pageY - 30) + "px;" + "left:" + (c.pageX + 30) + "px;");
+    icon.setAttribute("style", "top:" + (c.pageY + 3) + "px;" + "left:" + (c.pageX - 0.5) + "px;");
 })
 
 
@@ -84,19 +84,20 @@ document.onmousedown = function (event) {
             break;
 
     }
+
     styleImg.style.position = 'absolute'
     var x = getMousePosition(event).x;
     var y = getMousePosition(event).y;
-    styleImg.style.top = y + "px";
-    styleImg.style.left = x + "px";
+    styleImg.style.top = (y - 50) + "px";
+    styleImg.style.left = (x + 10) + "px";
     var testDiv = document.querySelector("body");
-    testDiv.appendChild(styleImg);
-    testDiv.style.overflow = 'hidden';
-    testDiv.appendChild(styleImg);
+    cursor.appendChild(styleImg);
+    // testDiv.style.overflow = 'hidden';
+    // testDiv.appendChild(styleImg);
     var count = 0;
     
     setTimeout(function () {
         
-        testDiv.removeChild(styleImg);
+        cursor.removeChild(styleImg);
     }, 3000)
 }

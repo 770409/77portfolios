@@ -3,6 +3,7 @@ body {
   padding: 0;
   height: 100vh;
   cursor: none;
+  overflow: hidden;
 }
 
 .cucursor_icon {

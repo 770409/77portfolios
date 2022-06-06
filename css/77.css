@@ -128,6 +128,7 @@ main .pDisnone {
   display: none;
 }
 main .my {
+  overflow: hidden;
   background-color: #3C564F;
 }
 main .my .container .picture1 {

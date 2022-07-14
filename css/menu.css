@@ -5,51 +5,73 @@
   margin: 15px;
   overflow: hidden;
 }
+
 .hanbergar .line {
   width: 80%;
   height: 3px;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  transition: 0.8s;
-  background-color: rgb(255, 255, 255);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: .8s;
+  transition: .8s;
+  background-color: white;
   border-radius: 30px;
 }
+
 .hanbergar .line1 {
   top: 25%;
 }
+
 .hanbergar .line2 {
   top: 50%;
 }
+
 .hanbergar .line3 {
   top: 75%;
 }
+
 .hanbergar:hover .line1 {
   top: 50%;
-  transform: translate(-50%, -50%) rotate(405deg);
+  -webkit-transform: translate(-50%, -50%) rotate(405deg);
+          transform: translate(-50%, -50%) rotate(405deg);
+  -webkit-transition-property: top, -webkit-transform;
+  transition-property: top, -webkit-transform;
   transition-property: top, transform;
-  transition-delay: 0s, 0.3s, 0.3s;
+  transition-property: top, transform, -webkit-transform;
+  -webkit-transition-delay: 0s, 0.3s, 0.3s;
+          transition-delay: 0s, 0.3s, 0.3s;
 }
+
 .hanbergar:hover .line2 {
   top: -50%;
 }
+
 .hanbergar:hover .line3 {
   top: 50%;
-  transform: translate(-50%, -50%) rotate(-405deg);
+  -webkit-transform: translate(-50%, -50%) rotate(-405deg);
+          transform: translate(-50%, -50%) rotate(-405deg);
+  -webkit-transition-property: top, -webkit-transform;
+  transition-property: top, -webkit-transform;
   transition-property: top, transform;
-  transition-delay: 0s, 0.3s, 0.3s;
+  transition-property: top, transform, -webkit-transform;
+  -webkit-transition-delay: 0s, 0.3s, 0.3s;
+          transition-delay: 0s, 0.3s, 0.3s;
 }
+
 .hanbergar:focus {
-  border: 1px dashed rgb(255, 255, 255);
+  border: 1px dashed white;
 }
 
 .checkBox {
   position: relative;
   width: 500px;
   height: 100%;
+  -webkit-transition: 5s;
   transition: 5s;
 }
+
 .checkBox:hover .cardA {
   left: 74%;
 }
@@ -60,4 +82,5 @@ input {
 
 #AA:checked + .btnn {
   display: block;
-}/*# sourceMappingURL=menu.css.map */
+}
+/*# sourceMappingURL=menu.css.map */

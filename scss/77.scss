@@ -195,7 +195,9 @@ main {
     background-color: rgb(222, 208, 199);
 
     .container {
-      h1 {
+      .porow{
+        margin-bottom: 100px;
+        h1 {
         font-size: 28px;
         color: rgb(255, 255, 255);
       }
@@ -204,6 +206,8 @@ main {
         font-size: 20px;
         color: rgb(255, 255, 255);
       }
+      }
+      
 
       .po2 {
         transform: translateY(-50%);
@@ -221,9 +225,6 @@ main {
 
         .img-container__1 {
           position: relative;
-          cursor: pointer;
-
-
           &:hover {
             ~a {
               animation: dio .4s cubic-bezier(0.54, 0.35, 1, 1) 0s 1 alternate forwards;
@@ -243,7 +244,7 @@ main {
             left: 10px;
             z-index: 1;
             transition: .5s;
-            color: rgb(222, 208, 199);
+            color: #7B7673;
           }
 
           &:after {
@@ -475,6 +476,7 @@ footer {
   main {
     .portfolios {
       .container {
+        padding-top: 35px !important;
         .porow {
           margin-bottom: 8px !important;
 
@@ -589,7 +591,7 @@ footer {
 
       .btnn {
 
-        margin-top: -255px;
+        margin-top: -220px;
 
         width: 100%;
         height: 200px;
